@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+<body>
+<!--
+Обязательное задание.
+
+Необходимо с помощью цикла for вывести следующие 11 строк в консоль:
+0 – это ноль
+1 – нечетное число
+2 – четное число
+3 – нечетное число
+…
+10 – четное число
+-->
+<script>
+  "use strict";
+  let my_number;
+
+  //В цикле от 0 до 10
+  for (my_number = 0; my_number <= 10; my_number++) {
+    //Если при делении на 2 остаток равен 1
+    if (my_number % 2 == 1) {
+      console.log(my_number + ' - нечетное число');
+    //Иначе  
+    } else {
+      //Если чило равно нулю
+      if (my_number == 0) {          
+        console.log(my_number + ' - это ноль');
+      //Иначе
+      } else {
+        console.log(my_number + ' - четное число');
+      }
+    }
+  }
+
+    //Вариант короткой записи:
+
+    // for (let my_number = 0; my_number <= 11; my_number++) {
+    //   console.log(my_number + `${(my_number % 2)  ?' - нечетное число' : (my_number == 0) ? ' - это ноль' : ' - четное число'}`);
+    // }
+
+</script>
+</body>
+</html>
